@@ -1,0 +1,1 @@
+Con esta herramienta web podrás crear tus presupuestos rápidamente, todos los precios están sujetos a cambio. Actualizaremos los precios semanalmnente. Si te resulta útil como herrammienta, podés y querés ayudarnos a mantenerla y agregar nuevas funcionalidades, podés invitarnos un cafecito (o los que quieras).
