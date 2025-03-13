@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto Online</title>
+    <link rel="stylesheet" href="styles-presupuestador.css">
+</head>
+<body>
+
+<!-- Cabecera -->
+<header>
+    <h1>Presupuestar</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="presupuestador-fx.html">Presupuestar</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Cuerpo -->
+    <main>
+    <div class="categories" id="categories-container">
+        <!-- Aquí se agregarán dinámicamente las categorías -->
+    </div>
+    <button id="view-cart-btn">Ver Carrito</button>
+
+<!-- Carrito de Compras -->
+<div id="cart-modal" class="modal">
+    <div class="modal-content">
+        <h2>Carrito de Compras</h2>
+        <div class="modal-body" id="cart-items"></div> <!-- Aquí el contenido se desplaza -->
+        <div id="cart-total">Total: $0</div>
+        <button id="clear-cart">Borrar todo</button>
+        <button id="save-cart">Guardar Presupuesto</button>
+        <button id="back-to-shop">Seguir Comprando</button>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</main>
+<!-- Galería de Imágenes -->
+<section class="image-gallery">
+    <h2>Galería de Sponsors</h2>
+    <div class="gallery">
+        <!-- Imagen 1 -->
+        <div class="gallery-item">
+            <img src="imagen1.jpg" alt="Producto 1">
+            <h3>Sponsor 1</h3>
+            <a href="https://www.sitio1.com" target="_blank">Ver más</a>
+        </div>
+        
+        <!-- Imagen 2 -->
+        <div class="gallery-item">
+            <img src="imagen2.jpg" alt="Producto 2">
+            <h3>Sponsor 2</h3>
+            <a href="https://www.sitio2.com" target="_blank">Ver más</a>
+        </div>
+
+        <!-- Imagen 3 -->
+        <div class="gallery-item">
+            <img src="imagen3.jpg" alt="Producto 3">
+            <h3>Sponsor 3</h3>
+            <a href="https://www.sitio3.com" target="_blank">Ver más</a>
+        </div>
+
+        <!-- Imagen 4 -->
+        <div class="gallery-item">
+            <img src="imagen4.jpg" alt="Producto 4">
+            <h3>Sponsor 4</h3>
+            <a href="https://www.sitio4.com" target="_blank">Ver más</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>Creado por FXBocardi - Todos los Derechos Reservados 2025.<br><br>
+Por contacto, recomendaciones y sugerencias, enviame un mail a:<br><br> fxbocardi@gmail.com<br><br></p>
+</footer>
+
+
+</body>
+</html>

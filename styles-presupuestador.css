@@ -64,62 +64,6 @@ nav ul li a:active {
 }
 
 
-/* Cuerpo */
-main {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-}
-
-section {
-    background-color: #fff;
-    padding: 20px;
-width: 100%;
-    height: auto;
-   border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
-}
-
-section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: #09631d;
-}
-
-section p {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 15px;
-    color: #666;
-}
-
-section a {
-    color: #0daf00;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-section a:hover {
-    color: #2eca00;
-}
-
-section:hover {
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-}
-
-/* Google Form Embed */
-iframe {
-    width: 100%;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
 /* Galería de Imágenes */
 .image-gallery {
     padding: 40px 20px;
