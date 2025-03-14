@@ -8,7 +8,7 @@
 /* Body */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #D5D6D5;
     color: #333;
     margin: 0;
     padding: 0;
@@ -16,18 +16,38 @@ body {
 
 /* Cabecera */
 header {
-    background-color: #199134; /* Verde medio */
+    background-color: #2F2F2F; /* Gris oscuro */
     color: #fff;
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;   /* Fija el header en la parte superior */
+    top: 0;            /* Colócalo en la parte superior de la página */
+    left: 0;           /* Alineación al borde izquierdo */
+    width: 100%;       /* Abarca todo el ancho de la pantalla */
+    z-index: 1000;     /* Asegura que esté por encima del contenido */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Añade sombra */
+}
+
+/* Para dar espacio al contenido debajo del header */
+body {
+    padding-top: 80px;  /* Ajusta según el tamaño del header */
 }
 
 header h1 {
     font-size: 2rem;
     font-weight: 600;
+    a {
+    color: #fff; 
+text-decoration: none;}
+a:hover, {
+    background-color: #32cf56;  /* Verde ligeramente más claro al pasar el cursor */
+    transform: translateY(-2px);  /* Pequeño efecto de elevación al hacer hover */
+}a:active {
+    background-color: #4E4E4D;  /* Gris aún más claro cuando se hace clic */
+}
 }
 
 nav ul {
@@ -46,7 +66,7 @@ nav ul li a {
     font-size: 1rem;
     font-weight: 500;
     padding: 10px 20px;
-    background-color: #28a745;  /* Verde medio */
+    background-color: #046B1B;  /* Verde oscuro */
     border: none;
     border-radius: 5px;
     display: inline-block;
@@ -55,7 +75,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a:focus {
-    background-color: #32cf56;  /* Verde ligeramente más claro al pasar el cursor */
+    background-color: #028A20;  /* Verde ligeramente más claro al pasar el cursor */
     transform: translateY(-2px);  /* Pequeño efecto de elevación al hacer hover */
 }
 
@@ -75,11 +95,11 @@ main {
 }
 
 section {
-    background-color: #fff;
+    background-color: #F9FBF5;
     padding: 20px;
-width: 100%;
+    width: 100%;
     height: auto;
-   border-radius: 8px;
+    border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
 }
@@ -123,7 +143,7 @@ iframe {
 /* Galería de Imágenes */
 .image-gallery {
     padding: 40px 20px;
-    background-color: #f7f7f7;
+    background-color: #DEDEDC;
     text-align: center;
     margin-bottom: 40px; /* Espacio entre la galería y el footer */
 }
@@ -293,139 +313,7 @@ button:hover {
     }
 }
 
-.categories {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
 
-.category {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 15px;
-    width: 550px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
-    display: flex;
-    flex-direction: column; /* Permite que los elementos se apilen verticalmente */
-    align-items: center; /* Centra los elementos horizontalmente */
-    justify-content: space-between; /* Espacia los elementos */
-}
-
-.category:hover {
-    transform: scale(1.05); /* Efecto de hover al pasar el ratón */
-}
-
-.category h3 {
-    text-align: center;
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.category p {
-    text-align: center;
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 15px; /* Espacio entre la descripción y el botón */
-}
-
-select {
-    width: 100%;
-    padding: 8px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-}
-
-button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 12px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: auto; /* Ajustar el tamaño del botón */
-    margin-top: 15px; /* Separar el botón de la lista desplegable */
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-/* Modal */
-#cart-modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
-}
-
-.modal-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 800px;
-    width: 100%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Aquí le damos el espacio limitado y el scroll al contenido del carrito */
-#cart-items {
-    margin-bottom: 20px;
-    max-height: 300px; /* Ajusta la altura máxima del carrito según lo necesites */
-    overflow-y: auto; /* Esto hará que el contenido sea desplazable */
-}
-
-/* Total del carrito */
-#cart-total {
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: right;
-    margin-bottom: 20px;
-}
-
-/* Botones del modal */
-#clear-cart, #save-cart, #back-to-shop {
-    width: 50%;
-    margin-top: 20px;
-}
-
-button {
-    background-color: #28a745;
-    color: white;
-}
-
-button:hover {
-    background-color: #218838;
-}
-
-#view-cart-btn {
-    background-color: #ff5722;
-    color: white;
-    padding: 15px;
-    border-radius: 10px;
-    cursor: pointer;
-    width: auto; /* Cambiar a 'auto' para que el botón tenga un tamaño ajustado */
-    margin-top: 20px;
-    margin-bottom: 40px;
-    margin-left: auto; /* Centrar el botón horizontalmente */
-    margin-right: auto;
-    display: block; /* Asegurarse de que el botón esté centrado */
-}
-
-#view-cart-btn:hover {
-    background-color: #d45f1f;
-}
 
 /* Media query para pantallas pequeñas */
 @media (max-width: 600px) {

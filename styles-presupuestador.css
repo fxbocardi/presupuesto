@@ -1,4 +1,4 @@
-/* Reset CSS */
+//* Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -8,26 +8,48 @@
 /* Body */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #AAAAAA;
     color: #333;
     margin: 0;
     padding: 0;
-}
+margin-top: 50px;
+ }
 
 /* Cabecera */
 header {
-    background-color: #199134; /* Verde medio */
+    background-color: #2F2F2F; /* Gris oscuro */
     color: #fff;
-    padding: 20px 40px;
+    padding: 20px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;   /* Fija el header en la parte superior */
+    top: 0px;            /* Colócalo en la parte superior de la página */
+    left: 0;           /* Alineación al borde izquierdo */
+    width: 100%;       /* Abarca todo el ancho de la pantalla */
+    z-index: 1000;     /* Asegura que esté por encima del contenido */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Añade sombra */
 }
+
+/* Para dar espacio al contenido debajo del header */
+body {
+    padding-top: 70px;  /* Ajusta según el tamaño del header */
+}
+
 
 header h1 {
     font-size: 2rem;
     font-weight: 600;
+    a {
+    color: #fff; 
+text-decoration: none;}
+a:hover, {
+    background-color: #32cf56;  /* Verde ligeramente más claro al pasar el cursor */
+    transform: translateY(-2px);  /* Pequeño efecto de elevación al hacer hover */
+}a:active {
+    background-color: ##4E4E4D;  /* Gris aún más claro cuando se hace clic */
+}
 }
 
 nav ul {
@@ -37,7 +59,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0;
+    margin: 0px;
 }
 
 nav ul li a {
@@ -46,7 +68,7 @@ nav ul li a {
     font-size: 1rem;
     font-weight: 500;
     padding: 10px 20px;
-    background-color: #28a745;  /* Verde medio */
+    background-color: #046B1B;  /* Verde oscuro */
     border: none;
     border-radius: 5px;
     display: inline-block;
@@ -55,7 +77,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a:focus {
-    background-color: #32cf56;  /* Verde ligeramente más claro al pasar el cursor */
+    background-color: #028A20;  /* Verde ligeramente más claro al pasar el cursor */
     transform: translateY(-2px);  /* Pequeño efecto de elevación al hacer hover */
 }
 
@@ -63,11 +85,40 @@ nav ul li a:active {
     background-color: #1e7e34;  /* Verde aún más claro cuando se hace clic */
 }
 
+header2 {
+    background-color: #2F2F2F; /* Gris oscuro */
+    color: #fff;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+    top: 0px;            /* Colócalo en la parte superior de la página */
+    left: 0;           /* Alineación al borde izquierdo */
+    width: 98%;       /* Abarca todo el ancho de la pantalla */
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Añade sombra */
+}
+
+header2 h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    a {
+    color: #fff; 
+text-decoration: none;}
+a:hover, {
+    background-color: #32cf56;  /* Verde ligeramente más claro al pasar el cursor */
+    transform: translateY(-2px);  /* Pequeño efecto de elevación al hacer hover */
+}a:active {
+    background-color: ##4E4E4D;  /* Gris aún más claro cuando se hace clic */
+}
+}
 
 /* Galería de Imágenes */
 .image-gallery {
     padding: 40px 20px;
-    background-color: #f7f7f7;
+    background-color: #DEDEDC;
     text-align: center;
     margin-bottom: 40px; /* Espacio entre la galería y el footer */
 }
@@ -246,7 +297,7 @@ button:hover {
 }
 
 .category {
-    background-color: #fff;
+    background-color: #D5D6D4;
     border-radius: 10px;
     padding: 15px;
     width: 550px;
@@ -282,14 +333,14 @@ select {
     margin: 10px 0;
     border-radius: 5px;
     border: 1px solid #ccc;
-    background-color: #f9f9f9;
+    background-color: #E4E4E3;
 }
 
 button {
-    background-color: #007BFF;
+    background-color: #028A20;
     color: white;
     border: none;
-    padding: 12px;
+    padding: 10px;
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -298,7 +349,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #03B129;
 }
 
 /* Modal */
@@ -345,19 +396,19 @@ button:hover {
 }
 
 button {
-    background-color: #28a745;
+    background-color: #028A20;
     color: white;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #03B129;
 }
 
 #view-cart-btn {
-    background-color: #ff5722;
+    background-color: #FF9D22;
     color: white;
-    padding: 15px;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 6px;
     cursor: pointer;
     width: auto; /* Cambiar a 'auto' para que el botón tenga un tamaño ajustado */
     margin-top: 20px;
@@ -368,8 +419,10 @@ button:hover {
 }
 
 #view-cart-btn:hover {
-    background-color: #d45f1f;
+    background-color: #FBAC4B;
 }
+
+
 
 /* Media query para pantallas pequeñas */
 @media (max-width: 600px) {
