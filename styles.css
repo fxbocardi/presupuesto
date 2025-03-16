@@ -23,18 +23,15 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    position: fixed;   /* Fija el header en la parte superior */
+    
     top: 0;            /* Colócalo en la parte superior de la página */
     left: 0;           /* Alineación al borde izquierdo */
     width: 100%;       /* Abarca todo el ancho de la pantalla */
-    z-index: 1000;     /* Asegura que esté por encima del contenido */
+    
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Añade sombra */
 }
 
-/* Para dar espacio al contenido debajo del header */
-body {
-    padding-top: 80px;  /* Ajusta según el tamaño del header */
-}
+
 
 header h1 {
     font-size: 2rem;
